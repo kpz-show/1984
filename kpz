@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Open Graph (Telegram превью) -->
+
+<meta property="og:title" content="Мы не знаем какой сейчас год">
+<meta property="og:description" content="Спектакль-молчание по мотивам «1984» Джорджа Оруэлла. Театр КПЗ · 2 мая · вход бесплатно">
+<meta property="og:image" content="https://i.ibb.co/BKYLqJk/1984-preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+
+<title>Мы не знаем какой сейчас год</title>
+
+<style>
+:root {
+    --bg: #f4efe6;
+    --card-bg: #fdfaf5;
+    --text: #1a1a1a;
+    --accent: #c4a47c;
+    --dark: #111;
+    --border: #1a1a1a;
+    --muted: #5e5e5e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+    font-family: 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card {
+    max-width: 620px;
+    width: 100%;
+    background: var(--card-bg);
+    border: 2px solid var(--border);
+    box-shadow: 10px 10px 0 rgba(0,0,0,0.08);
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    border-bottom: 1px dashed var(--border);
+    padding-bottom: 5px;
+}
+
+h1 {
+    font-size: 2.6rem;
+    line-height: 1;
+    text-transform: uppercase;
+    border-left: 6px solid var(--accent);
+    padding-left: 10px;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    font-style: italic;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 8px;
+}
+
+.epigraph {
+    background: #f3efe7;
+    padding: 12px;
+    border-left: 4px solid #b89b7b;
+    font-style: italic;
+}
+
+.description {
+    font-size: 0.9rem;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    font-size: 0.75rem;
+}
+
+.tags span {
+    border: 1px solid var(--border);
+    padding: 3px 8px;
+    border-radius: 20px;
+}
+
+.quote {
+    background: #e8e0d3;
+    padding: 12px;
+    border-left: 5px solid var(--border);
+    font-weight: bold;
+}
+
+.info {
+    background: var(--border);
+    color: #fff;
+    padding: 14px;
+    font-size: 0.85rem;
+}
+
+.button {
+    display: block;
+    text-align: center;
+    border: 2px solid var(--border);
+    padding: 10px;
+    text-decoration: none;
+    color: var(--border);
+    font-weight: bold;
+    margin-top: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card" onclick="goTG(event)">
+
+<div class="header">
+<span>Театр КПЗ</span>
+<span>2 мая</span>
+</div>
+
+<h1>Мы не знаем<br>какой сейчас<br>год</h1>
+
+<div class="subtitle">
+Спектакль-молчание по мотивам «1984» Джорджа Оруэлла
+</div>
+
+<div class="epigraph">
+«Что происходит, когда правда становится преступлением?»
+</div>
+
+<div class="description">
+Оруэлловская антиутопия оживает на сцене — о контроле, памяти и праве чувствовать.
+</div>
+
+<div class="tags">
+<span>приходите</span>
+<span>сомневайтесь</span>
+<span>вспоминайте</span>
+<span>незнание — сила</span>
+</div>
+
+<div class="quote">
+«Кто управляет прошлым — управляет будущим»
+</div>
+
+<div class="info">
+2 мая · 16:30<br>
+вход бесплатно
+</div>
+
+<a class="button" href="https://t.me/budniTeatrKP?utm_source=landing&utm_medium=button" target="_blank">
+Открыть Telegram
+</a>
+
+</div>
+
+<script>
+function goTG(e){
+    if(!e.target.closest('a')){
+        window.open('https://t.me/budniTeatrKP?utm_source=landing&utm_medium=card','_blank');
+    }
+}
+</script>
+
+</body>
+</html>
